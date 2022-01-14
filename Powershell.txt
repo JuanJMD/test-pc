@@ -1,0 +1,305 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\Juan Marquez> cd OneDrive
+PS C:\Users\Juan Marquez\OneDrive> cd '.\Multi-Device Files - SCHOOL\'
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL> cd '.\Fall 2021\'
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021> cd .\CSCI-26\
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26> cd '.\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez\'
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> echo "# test-pc"
+# test-pc
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> echo "# test-pc" >> README.md
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> dir
+
+
+    Directory: C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION -
+    Programming Assignment 4 - Juan Jesus Marquez
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a---l         12/7/2021  10:48 PM         (6544) BinaryTreeDriver.cpp
+-a---l         12/7/2021  10:52 PM         (2872) IntBinaryTree.cpp
+-a---l         12/7/2021  10:52 PM         (1009) IntBinaryTree.h
+-a---l         1/13/2022   4:51 PM             24 README.md
+
+
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git init
+Initialized empty Git repository in C:/Users/Juan Marquez/OneDrive/Multi-Device Files - SCHOOL/Fall 2021/CSCI-26/FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez/.git/
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        BinaryTreeDriver.cpp
+        IntBinaryTree.cpp
+        IntBinaryTree.h
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add README.md
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add BinaryTreeDriver.cpp
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add IntBinaryTree.cpp
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add IntBinaryTree.h
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git commit -m "first commit"
+[master (root-commit) 1e9dc81] first commit
+ 4 files changed, 340 insertions(+)
+ create mode 100644 BinaryTreeDriver.cpp
+ create mode 100644 IntBinaryTree.cpp
+ create mode 100644 IntBinaryTree.h
+ create mode 100644 README.md
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git remote add origin https://github.com/JuanJMD/test-pc.git
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> push -u origin master
+push : The term 'push' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ push -u origin master
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (push:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git push -u origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 2.95 KiB | 2.95 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/JuanJMD/test-pc.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git clone https://github.com/JuanJMD/Test-Folder-VSCODE Nito
+Cloning into 'Nito'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 3
+Receiving objects: 100% (6/6), done.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> dir
+
+
+    Directory: C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION -
+    Programming Assignment 4 - Juan Jesus Marquez
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da---l         1/13/2022   5:02 PM                Nito - Ignore
+-a---l         12/7/2021  10:48 PM           6544 BinaryTreeDriver.cpp
+-a---l         12/7/2021  10:52 PM           2872 IntBinaryTree.cpp
+-a---l         12/7/2021  10:52 PM           1009 IntBinaryTree.h
+-a---l         1/13/2022   4:51 PM             24 README.md
+
+
+PS C:\Users\Juan Marquegit status\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Nito - Ignore/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add '.\Nito - Ignore\'
+fatal: pathspec '.\Nito - Ignore"' did not match any files
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add Nito - Ignore
+fatal: pathspec 'Nito' did not match any files
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add "Nito - Ignore"
+warning: adding embedded git repository: Nito - Ignore
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> Nito - Ignore
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached Nito - Ignore
+hint:
+hint: See "git help submodule" for more information.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add update.txt
+fatal: pathspec 'update.txt' did not match any files
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> echo "# test-pc" >> update.txt
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git push update.txt
+fatal: invalid gitfile format: update.txt
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add update.txt
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git commit -m "Learn to update file"
+[master 148c841] Learn to update file
+ 2 files changed, 1 insertion(+)
+ create mode 160000 Nito - Ignore
+ create mode 100644 update.txt
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 375 bytes | 375.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JuanJMD/test-pc.git
+   1e9dc81..148c841  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git remove ".\Nito - Ignore\"
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git rm '.\Nito - Ignore\'
+fatal: pathspec '.\Nito - Ignore"' did not match any files
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git rm "Nito - Ignore"
+fatal: could not lookup name for submodule 'Nito - Ignore'
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git rm
+fatal: No pathspec was given. Which files should I remove?
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git rm '.\Nito - Ignore\'
+fatal: pathspec '.\Nito - Ignore"' did not match any files
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git merge ".\update.txt"
+merge: .\update.txt - not something we can merge
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git commit .\update.txt
+Aborting commit due to empty commit message.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    Nito - Ignore
+        modified:   update.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git rm "Nito - Ignore"
+rm 'Nito - Ignore'
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add update.txt
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git -u commit "Sent update at 5:20"
+unknown option: -u
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--super-prefix=<path>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git commit -m "Timestamp: 5:20"
+[master fd91cc7] Timestamp: 5:20
+ 2 files changed, 1 deletion(-)
+ delete mode 160000 Nito - Ignore
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 344 bytes | 344.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JuanJMD/test-pc.git
+   148c841..fd91cc7  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add car
+fatal: pathspec 'car' did not match any files
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git add car.jpg
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git commit -m "Adding Photo to Repo"
+[master 173d24c] Adding Photo to Repo
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 car.jpg
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> push -u origin master
+push : The term 'push' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ push -u origin master
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (push:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.84 MiB | 582.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JuanJMD/test-pc.git
+   fd91cc7..173d24c  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git rm car.jpg
+rm 'car.jpg'
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git push -u origin master
+Everything up-to-date
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git commit -m "Image Removal"
+[master 6580da5] Image Removal
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 car.jpg
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez> git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 229 bytes | 229.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/JuanJMD/test-pc.git
+   173d24c..6580da5  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+PS C:\Users\Juan Marquez\OneDrive\Multi-Device Files - SCHOOL\Fall 2021\CSCI-26\FINAL VERSION - Programming Assignment 4 - Juan Jesus Marquez>
